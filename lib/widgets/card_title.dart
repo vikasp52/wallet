@@ -21,6 +21,8 @@ class CardTitle extends StatelessWidget {
           style: const TextStyle(
             color: CustomColor.blackColor,
             fontSize: 20,
+            //decoration: TextDecoration.,
+            //fontStyle: FontStyle.,
             fontWeight: FontWeight.bold,
           ),
         ),

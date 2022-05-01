@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "currency": "Bitcoin",
+      "shortName": "BTC",
+      "price": "-0.30455",
+      "date": "6 Spet 2019",
+      "transectionType": "Sent"
+    },
+    {
+        "id": 2,
+        "currency": "Ethereum",
+        "shortName": "ETH",
+        "price": "-0.45465",
+        "date": "5 Aug 2019",
+        "transectionType": "Receive"
+      },
+      {
+        "id": 3,
+        "currency": "Ripley",
+        "shortName": "XRP",
+        "price": "-0.98754",
+        "date": "10 Oct 2019",
+        "transectionType": "Receive"
+      },
+      {
+        "id": 4,
+        "currency": "Rubel",
+        "shortName": "RUB",
+        "price": "-0.23232",
+        "date": "12 Spet 2019",
+        "transectionType": "Sent"
+      },
+      {
+        "id": 5,
+        "currency": "Bitcoin",
+        "shortName": "BTC",
+        "price": "-0.30455",
+        "date": "6 Spet 2019",
+        "transectionType": "Receive"
+      }
+  ]

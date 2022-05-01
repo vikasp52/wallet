@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:wallet/bloc/cubit/transaction_cubit.dart';
+import 'package:wallet/repository/transection_repository.dart';
 import 'package:wallet/screens/transection/transection.dart';
 import 'package:wallet/screens/wallet/wallet.dart';
 import 'package:wallet/utils/colors.dart';
@@ -11,13 +14,18 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _selectedIndex = 1;
+  int _selectedIndex = 2;
 
-  var pages = const [
-    Tabs(tabName: 'Home'),
-    WalletScreen(),
-    TransectionScreen(),
-    Tabs(tabName: 'Profile'),
+  var pages = [
+    const Tabs(tabName: 'Home'),
+    const WalletScreen(),
+    BlocProvider(
+      create: (context) => TransactionCubit(
+        transactionRepository: TranscationRepository(),
+      ),
+      child: const TransectionScreen(),
+    ),
+    const Tabs(tabName: 'Profile'),
   ];
 
   List<Icon> icons = const [
